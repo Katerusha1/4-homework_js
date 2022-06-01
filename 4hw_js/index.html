@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <script> 
+    "use srtict";
+  //  1.1  /*es5*/
+  //   function Product(name,price) {
+  //         this.name = name;
+  //         this.price = price;
+  //     }
+
+  //     Product.prototype.make25PersentDiscount = function() {
+  //       this.price = this.price - (this.price * 25 /100);
+  //     };
+
+  //     const productShop = new Product ("Молоко", 60);
+      
+  //     productShop.make25PersentDiscount();
+     
+  //     console.log(productShop);
+
+
+    // 1.1 /* es6**/
+
+    //  "use strict";
+
+    //   class Product {
+    //     constructor (name,price) {
+    //       this.name = name;
+    //       this.price = price;
+    //     }
+
+    //     make25PercentDiscount() {
+    //       this.price = this.price - (this.price *25 / 100);
+    //     }
+    //   };
+
+    //   const productElement = new Product ("Гречка",160);
+    //   productElement.make25PercentDiscount();
+    //   console.log(productElement);
+
+    // 1.2  /*es5**/
+    //  "use srtict";
+    //  function Post (author ,text, date) {
+    //    this.author = author;
+    //    this.text = text;
+    //    this.date = date;
+    //  }
+
+    //  Post.prototype.edit = function(text){
+    //    this.text = text;
+    //  };
+
+    //  function AttachedPost (author, text, date){
+    //     Post.call(this, author, text, date);
+    //     this.highlighted = false;
+    //  }
+    //   AttachedPost.prototype = Object.create(Post.prototype);
+    //   AttachedPost.prototype.constructor = AttachedPost;
+
+    //   AttachedPost.prototype.makeTextHighlighted = function() {
+    //     this.highlighted = true;
+
+    //   };
+
+    //     const attachedElement = new AttachedPost( "user" , " How are you?" ,2022);
+    //   console.log(attachedElement);
+    //   attachedElement.makeTextHighlighted();
+    //   attachedElement.edit("it is a good day");
+    //   console.log(attachedElement);
+      
+
+    /*es6**/
+     
+    // class Post {
+    //   constructor(author, text, date) {
+    //     this.author = author;
+    //     this.text = text;
+    //     this.date = date;
+    //   }
+    //     edit(text) {
+    //       this.text = text;
+    //     }
+    // }
+
+    // class AttachedPost extends Post {
+    //   constructor (author, text, date){
+    //     super(author, text, date);
+    //     this.highlighted = false;
+    //   }
+
+    //   makeTextHighlighted() {
+    //     this.highlighted = true;
+
+    //   }
+    // }
+    //   const attachedElement = new AttachedPost( "user" , " How are you?" ,2022);
+    //   console.log(attachedElement);
+    //   attachedElement.makeTextHighlighted();
+    //   attachedElement.edit("it is a good day");
+    //   console.log(attachedElement);
+      
+      </script>
+
+    <script src="./1.js"></script>
+  </body>
+</html
